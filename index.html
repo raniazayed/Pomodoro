@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Pomodoro</title>
+    <link rel="icon" href="images/front.jpg">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="">
+    <audio  src="assets/notification.mp3" id="notify"></audio>
+
+</head>
+
+<body>
+
+
+<!-- newton-cardle -->
+<div class="container">
+    <div class="grid">
+            <div class="work center"> 
+                <span id="work">Work: 00:00:00</span> 
+                <div class="balls">
+                        <div id="leftBall" class="box">
+                            <div class="ball"></div>
+                        </div>
+                        <div class="box">
+                            <div class="ball"></div>
+                        </div>
+                        <div class="box">
+                            <div class="ball"></div>
+                        </div>
+                        <div class="box">
+                            <div class="ball"></div>
+                        </div>
+                        <div class="box">
+                            <div class="ball"></div>
+                        </div>
+                        <div class="box">
+                            <div class="ball"></div>
+                        </div>
+                        <div id="rightBall" class="box">
+                            <div class="ball" id="first"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="break center"> 
+                <span id="break">Break: 00:00:00</span> 
+            </div>
+    </div>
+
+    <div class="btn-grid">  
+            <button id="startwork">start work</button>
+            <button id="startbreak" disabled>start break</button>
+            <button id="resume" disabled>resume work</button>
+            <button id="end" disabled>End work</button>
+    </div> 
+</div>
+
+<h1>Pomodoro Timer</h1>
+
+   
+<!-- <script src="js/script.js"></script> -->
+<script src="js/scr.js"></script>
+</body>
+</html>

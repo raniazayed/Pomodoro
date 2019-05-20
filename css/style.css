@@ -1,0 +1,134 @@
+body{
+    color: white;
+    background-image: url('../images/ODHG1M0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'main-font';
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+.center{
+    text-align: center;
+}
+.container{
+   
+    text-align: center;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-gap: 2%;
+    justify-content: space-between;
+}
+.container .btn-grid button{
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    text-transform: capitalize;
+    border-radius: 25px;
+    background-color: #0a883e;;
+}
+.container .btn-grid button:disabled , button[disabled]{
+    background-color: #D2E0F3;
+    color: #004055;
+    opacity: 0.5;
+    cursor: not-allowed
+}
+.grid{
+  
+    position: relative;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: "main-font";
+    text-align: center
+}
+.break{
+    margin-bottom: 20px
+}
+
+#work{
+    font-size: 40px;
+    font-family: "main-font"
+}
+#break{
+    font-size: 40px;
+    font-family: "main-font"
+}
+.box{
+    padding-top:100px;
+    width:15px;
+    transform: rotate(0deg);
+    transform-origin:50% 50%;
+    float:left;
+  }
+  .balls{
+    width: 110px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 175%;
+    right: 0;
+    left: 2%;  
+  }
+  .ball{
+    background:#aef;
+    width:15px;
+    height:15px;
+    float:left;
+    border-radius:50%;
+  }
+
+  .leftMove{
+    animation: leftBall .5s ease-in-out 0s infinite alternate;
+  }
+  .rightMove{
+    animation: rightBall .5s ease-in-out 0s infinite alternate;
+  }
+@keyframes leftBall
+{
+0% {
+  transform: rotate(0deg) translateY(0px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: rotate(0deg) translateY(0px);
+  }
+100% {
+  transform: rotate(50deg) translateY(-20px);
+  }
+
+}
+
+@keyframes rightBall
+{
+0% {
+  transform: rotate(-50deg) translateY(-20px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: rotate(0deg) translateY(0px);
+  }
+100% {
+  transform: rotate(0deg) translateY(0px)
+  }
+
+}
